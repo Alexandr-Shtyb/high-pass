@@ -1,0 +1,356 @@
+.examples-works {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 68px;
+
+  &__tag {
+    max-width: 1290px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__left {
+    align-self: flex-start;
+    margin-right: 30px;
+    width: 630px;
+    min-height: 630px;
+  }
+
+  &__right {
+    align-self: flex-start;
+    width: 630px;
+    min-height: 630px;
+  }
+
+  &__name-block {
+    @include bold-text-TTFirs;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+
+  &__right-img {
+    width: 630px;
+    height: 587px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 30px;
+  }
+
+  &__img1 {
+    min-height: 630px;
+    background-image: url("../img/main-photo1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 15px 53px 58px;
+  }
+
+  &__img1-label-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 367px;
+  }
+
+  &__img1-label {
+    @include regular-text-Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+    padding: 7px 14px;
+    background-color: $black;
+    display: inline-block;
+  }
+
+  &__img2 {
+    width: 630px;
+    height: 300px;
+    grid-column: 1 / 2;
+    grid-row: 1;
+    background-image: url("../img/main-photo2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__img3 {
+    width: 300px;
+    height: 257px;
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url("../img/main-photo3.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__img4 {
+    width: 300px;
+    height: 257px;
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url("../img/main-photo4.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title1 {
+    @include regular-text-Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 427px;
+    min-height: 19px;
+  }
+
+  &__title2 {
+    @include bold-text-TTFirs;
+    font-size: 36px;
+    line-height: 104%;
+    display: inline-block;
+    color: $white;
+    margin-bottom: 19px;
+    width: 427px;
+    min-height: 74px;
+  }
+
+  &__btn {
+    @include bold-text-Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    display: inline-block;
+    padding: 15px 22px;
+    background-color: $orange;
+    transition: background-color .3s ease;
+  }
+
+  &__btn:hover:not(:focus-visible) {
+    background-color: $color-focus;
+  }
+
+  &__btn:focus-visible {
+    outline: 0;
+    outline: 3px solid $color-active;
+  }
+
+  &__btn:active:not(:focus-visible) {
+    background-color: $color-active;
+  }
+}
+
+@media (max-width: 1320px) {
+  .examples-works {
+    &__tag {
+      max-width: 964px;
+    }
+
+    &__left {
+      width: 466px;
+      min-height: 623px;
+    }
+
+    &__right {
+      min-height: 623px;
+    }
+
+    &__img1 {
+      width: 466px;
+      min-height: 623px;
+      padding: 15px 15px 30px 30px;
+      background-position: center;
+    }
+
+    &__title1 {
+      width: 232px;
+    }
+
+    &__title2 {
+      width: 406px;
+      min-height: 68px;
+      font-size: 34px;
+    }
+
+    &__right {
+      width: 466px;
+    }
+
+    &__name-block {
+      margin-bottom: 25px;
+    }
+
+    &__right-img {
+      grid-template-columns: repeat(2, 218px);
+      width: 466px;
+      height: 548px;
+    }
+
+    &__img2 {
+      width: 466px;
+      height: 332px;
+    }
+
+    &__img3, &__img4 {
+      width: 218px;
+      height: 186px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .examples-works {
+    max-width: 768px;
+
+    &__tag {
+      max-width: 714px;
+      min-height: 454px;
+    }
+
+    &__left {
+      width: 342px;
+      min-height: 452px;
+    }
+
+    &__right {
+      width: 342px;
+      min-height: 452px;
+    }
+
+    &__img1 {
+      width: 342px;
+      min-height: 452px;
+      padding: 15px 15px 30px 28px;
+      background-position: center;
+    }
+
+    &__img1-label-block {
+      margin-bottom: 178px;
+    }
+
+    &__title1 {
+      width: 232px;
+      margin-bottom: 14px;
+    }
+
+    &__title2 {
+      width: 239px;
+      min-height: 93px;
+      font-size: 34px;
+      line-height: 90%;
+    }
+
+    &__right {
+      width: 342px;
+      min-height: 452px;
+    }
+
+    &__name-block {
+      font-size: 21px;
+      line-height: 104%;
+      margin-bottom: 17px;
+    }
+
+    &__right-img {
+      justify-content: flex-start;
+      grid-template-columns: repeat(2, 156px);
+      width: 342px;
+      height: 391px;
+    }
+
+    &__img2 {
+      width: 342px;
+      height: 228px;
+    }
+
+    &__img3, &__img4 {
+      width: 156px;
+      height: 133px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .examples-works {
+    max-width: 300px;
+    margin-bottom: 50px;
+
+    &__tag {
+      max-width: 278px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__left {
+      margin: 0;
+      width: 278px;
+      min-height: 422px;
+      margin-bottom: 34px;
+    }
+
+    &__img1 {
+      width: 278px;
+      min-height: 422px;
+      padding: 6px 5px 30px 28px;
+      background-position: center;
+    }
+
+    &__img1-label-block {
+      margin-bottom: 190px;
+    }
+
+    &__title1 {
+      width: 203px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    &__title2 {
+      width: 169px;
+      min-height: 78px;
+      font-size: 24px;
+      line-height: 110%;
+      margin-bottom: 14px;
+    }
+
+    &__btn {
+      padding: 12px 22px;
+      min-height: 40px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__right {
+      width: 278px;
+      min-height: 375px;
+    }
+
+    &__name-block {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    &__right-img {
+      justify-content: flex-start;
+      grid-template-columns: repeat(2, 124px);
+      width: 278px;
+      height: 321px;
+    }
+
+    &__img2 {
+      width: 278px;
+      height: 186px;
+    }
+
+    &__img3, &__img4 {
+      width: 124px;
+      height: 105px;
+    }
+  }
+}

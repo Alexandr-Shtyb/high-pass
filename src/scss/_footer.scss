@@ -1,0 +1,189 @@
+.footer {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    min-height: 106px;
+    background-color: $black;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  &__tag-320 {
+    display: none;
+  }
+
+  &__elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1290px;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__signature {
+    @include regular-text-TTFirs;
+    font-size: 14px;
+    line-height: 18px;
+    color: $grey-color-e9;
+    display: inline-block;
+    width: 263px;
+    min-height: 18px;
+  }
+
+  &__quote {
+    @include regular-text-Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    color: $grey;
+    width: 361px;
+    min-height: 66px;
+  }
+
+  &__left-block {
+    align-self: flex-start;
+    margin-right: 177px;
+  }
+
+  &__center-block {
+    align-self: flex-start;
+    margin-right: 329px;
+  }
+
+  &__right-block {
+    align-self: flex-start;
+  }
+
+  &__more-interesting {
+    @include regular-text-Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    color: $grey;
+    display: block;
+    width: 161px;
+    min-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link-ok:hover path, &__link-vk:hover path {
+    fill: $orange;
+  }
+
+  &__link-ok:focus-visible path, &__link-vk:focus-visible path {
+    fill: $color-focus;
+  }
+
+  &__link-ok:focus-visible, &__link-vk:focus-visible {
+    outline: 0;
+  }
+
+  &__link-ok:active:not(:focus-visible) path, &__link-vk:active:not(:focus-visible) path {
+    fill: $color-active;
+  }
+
+  &__ok {
+    margin-right: 20px;
+  }
+
+  &__ok path, &__vk path {
+    transition: fill .3s ease;
+  }
+}
+
+@media (max-width: 1320px) {
+  .footer {
+    &__elements {
+      max-width: 962px;
+    }
+
+    &__left-block {
+      margin-right: 109px;
+    }
+
+    &__center-block {
+      margin-right: 69px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    &__elements {
+      justify-content: space-between;
+      max-width: 714px;
+    }
+
+    &__left-block {
+      margin-right: 0;
+    }
+
+    &__center-block {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__tag {
+      min-height: 123px;
+    }
+
+    &__tag-320 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 62px;
+      background-color: $color-input;
+    }
+
+    &__left-block-320 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 171px;
+      min-height: 34px;
+      padding: 14px 74px;
+    }
+
+    &__logo {
+      margin-bottom: 3px;
+    }
+
+    &__img {
+      width: 111px;
+      min-height: 18px;
+    }
+
+    &__signature {
+      max-width: 171px;
+      min-height: 13px;
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    &__elements {
+      justify-content: center;
+      max-width: 160px;
+    }
+
+    &__left-block, &__center-block {
+      display: none;
+    }
+  }
+}

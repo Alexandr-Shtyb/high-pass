@@ -1,0 +1,43 @@
+<section id="contacts" class="contacts">
+	<div class="container contacts__tag">
+		<h2 class="contacts__header">Контакты</h2>
+		<div class="contacts__content">
+			<div class="contacts__left">
+        <div id="map"></div>
+        <div class="contacts__maps-address-block">
+          <div class="contacts__btn-close-block">
+            <button class="contacts__maps-btn btn">
+              <svg class="contacts__btn-close" width="20" height="20" viewBox="0 0 20 20">
+                <use xlink:href="img/svg/sprites.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="contacts__maps-address-block-signature">
+            <span class="contacts__name-studio">Студия «High pass»</span>
+            <address class="contacts__address-studio">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82</address>
+            <div class="contacts__tel-block">
+              <svg class="contacts__tel-studio-picture" width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/svg/sprites.svg#maps-call"></use>
+              </svg>
+              <a class="contacts__tel-studio" href="tel:+749542423532">+7 495 424-23-532</a>
+            </div>
+          </div>
+        </div>
+			</div>
+			<div class="contacts__right">
+				<h3 class="contacts__header-application">Оставить заявку</h3>
+				<p class="contacts__text-application">Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки или другого мероприятия</p>
+				<form id="contacts-form" class="contacts__form" action="#">
+					<div class="input">
+            <input id="contacts-input-name" class="contacts__input contacts__input1" placeholder="Имя" type="text">
+          </div>
+					<div class="input">
+            <input id="contacts-input-email" class="contacts__input contacts__input2" placeholder="Email" type="email">
+          </div>
+          <textarea id="contacts-textarea-comments" class="contacts__textarea" placeholder="Комментарий" cols="30" rows="10"></textarea>
+					<button class="contacts__btn btn"><span class="contacts__btn-text">Отправить </span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

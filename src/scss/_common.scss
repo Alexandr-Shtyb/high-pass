@@ -1,0 +1,97 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input, textarea {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+}
+
+$black: #202020;
+$white: #fff;
+$orange: #ff6e30;
+$grey: #cacaca;
+$color-input: #4a4a4a;
+$color-data: #999;
+$grey-color-e9: #e9e9e9;
+$color-focus: #bc572b;
+$color-active: #ce4307;
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: local("TT Firs Neue-bold"),
+  url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"),
+  url("../fonts/TTFirsNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: local("TT Firs Neue-normal"),
+  url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"),
+  url("../fonts/TTFirsNeue-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-bold"),
+  url("../fonts/roboto-bold-webfont.woff2") format("woff2"),
+  url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-normal"),
+  url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
+  url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin regular-text-TTFirs {
+  font-family: 'TT Firs Neue', sans-serif;
+  font-weight: 400;
+}
+
+@mixin bold-text-TTFirs {
+  font-family: 'TT Firs Neue', sans-serif;
+  font-weight: 700;
+}
+
+@mixin regular-text-Roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin bold-text-Roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+

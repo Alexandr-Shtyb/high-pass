@@ -1,0 +1,388 @@
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+
+  &__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    min-height: 80px;
+    background-color: $black;
+    margin: 0 auto;
+  }
+
+  &__search-by-click-input::placeholder {
+    @include regular-text-TTFirs;
+    font-size: 16px;
+    line-height: 21px;
+    color: $grey-color-e9;
+    background-color: $black;
+  }
+
+  &__search-by-click-input {
+    padding-right: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    width: 75%;
+    color: $grey-color-e9;
+    border-bottom: 1px solid $grey-color-e9;
+    background-color: $black;
+  }
+
+  &__search-by-click-input:hover:not(:focus-visible) {
+    border-bottom: 1px solid $orange;
+  }
+
+  &__search-by-click-input:focus-visible {
+    outline: 0;
+    border-bottom: 1px solid $orange;
+  }
+
+  &__search-by-click-input:active:not(:focus-visible) {
+    border-bottom: 1px solid $color-active;
+  }
+
+  &__search-by-click-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__search-by-click-block {
+    min-height: 30px;
+  }
+
+  &__elements {
+    max-width: 1290px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  &__search-by-click-block {
+    display: none;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    margin-right: 140px;
+  }
+
+  &__img {
+    min-height: 31px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 79px;
+  }
+
+  &__nav {
+    margin-right: 193px;
+  }
+
+  &__link {
+    @include regular-text-TTFirs;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+    text-decoration: none;
+    width: 100%;
+    min-height: 21px;
+    transition: color .3s ease;
+  }
+
+  &__link:hover:not(:focus-visible) {
+    color: $orange;
+  }
+
+  &__link:focus-visible {
+    color: $white;
+    background-color: $color-focus;
+    outline: none;
+  }
+
+  &__link:active:not(:focus-visible) {
+    color: $color-active;
+  }
+
+  &__nav-block-768 {
+    display: none;
+  }
+
+  &__burger-btn {
+    display: none;
+  }
+
+  &__burger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1320px) {
+  .header {
+    &__logo {
+      margin-right: 82px;
+    }
+
+    &__img {
+      max-width: 166px;
+      min-height: 26px;
+    }
+
+    &__elements {
+      max-width: 962px;
+    }
+
+    &__img {
+      min-height: 27px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 33px;
+    }
+
+    &__nav {
+      margin-right: 131px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &__tag {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__search-by-click-input::placeholder {
+      @include regular-text-TTFirs;
+      font-size: 16px;
+      line-height: 21px;
+      color: $grey-color-e9;
+      background-color: $black;
+    }
+
+    &__search-by-click-input {
+      padding-right: 15px;
+      font-size: 16px;
+      line-height: 21px;
+      width: 75%;
+      color: $grey-color-e9;
+      border-bottom: 1px solid $grey-color-e9;
+      background-color: $black;
+    }
+
+    &__search-by-click-input:hover:not(:focus-visible) {
+      border-bottom: 1px solid $orange;
+    }
+
+    &__search-by-click-input:focus-visible {
+      outline: 0;
+      border-bottom: 1px solid $orange;
+    }
+
+    &__search-by-click-input:active:not(:focus-visible) {
+      border-bottom: 1px solid $color-active;
+    }
+
+    &__search-by-click-tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__search-by-click-block {
+      width: 45%;
+      min-height: 30px;
+    }
+
+    &__elements {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 27px;
+      width: 768px;
+    }
+
+    &__img {
+      margin: 0;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__nav-block-768 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 45px;
+      background-color: $color-input;
+      margin: 0 auto;
+      padding: 12px 27px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 72px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__tag {
+      min-height: 70px;
+    }
+
+    &__elements {
+      width: 320px;
+    }
+
+    &__search-by-click-tag {
+      justify-content: center;
+    }
+
+    &__search-by-click-block {
+      width: 100%;
+      min-height: 30px;
+    }
+
+    &__search-by-click-input::placeholder {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__search-by-click-input {
+      width: 100%;
+      padding-right: 5px;
+      font-size: 16px;
+      line-height: 21px;
+      color: $grey-color-e9;
+      border-bottom: 1px solid $grey-color-e9;
+      background-color: $black;
+    }
+
+    &__search-by-click-input:hover:not(:focus-visible) {
+      border-bottom: 1px solid $orange;
+    }
+
+    &__search-by-click-input:focus-visible {
+      outline: 0;
+      border-bottom: 1px solid $orange;
+    }
+
+    &__search-by-click-input:active:not(:focus-visible) {
+      border-bottom: 1px solid $color-active;
+    }
+
+    &__search-by-click-svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    &__elements {
+      padding: 25px 21px;
+    }
+
+    &__img {
+      margin: 0;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__nav-block-768 {
+      justify-content: flex-start;
+    }
+
+    &__burger-btn {
+      display: block;
+    }
+
+    &__burger-menu {
+      //width: 320px;
+      min-height: 541px;
+      background-color: $black;
+      padding: 15px 130px 20px 35px;
+      //padding: 5% 40% 6% 11%;
+    }
+
+    &__burger-menu-btn-close {
+      margin-bottom: 15px;
+    }
+
+    &__nav-burger {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 210px;
+    }
+
+    &__list-burger {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+
+    &__tel-block {
+      display: flex;
+      align-items: center;
+    }
+
+    &__tel-studio {
+      @include regular-text-TTFirs;
+      font-size: 14px;
+      line-height: 18px;
+      color: $orange;
+      width: 128px;
+    }
+  }
+}
+
+@media (max-width: 362px) {
+  .header {
+    &__img {
+      max-width: 112px;
+      min-height: 18px;
+    }
+
+    &__search-btn-svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &__search-by-click-input::placeholder {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__search-by-click-input {
+      width: 80%;
+      padding-right: 5px;
+      font-size: 14px;
+      line-height: 18px;
+      color: $grey-color-e9;
+      border-bottom: 1px solid $grey-color-e9;
+      background-color: $black;
+    }
+  }
+}
+
+
